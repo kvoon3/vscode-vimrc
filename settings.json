@@ -1,0 +1,67 @@
+{
+  "extensions.experimental.affinity": {
+    "cuixiaorui.cvim": 1
+  },
+  "vim.flash.enable": true,
+  "vim.foldfix": true, 
+  "vim.handleKeys": {
+    "<C-a>": true,
+    "<C-s>": false,
+    "<C-z>": true
+  },
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "leader",
+        "e"
+      ],
+      "commands": [
+        "go-to-next-error.next.error"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "E"
+      ],
+      "commands": [
+        "go-to-next-error.previous.error"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        "go-to-next-error.next.warning"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "W"
+      ],
+      "commands": [
+        "go-to-next-error.previous.warning"
+      ]
+    },
+    {
+      "after": [
+        "i"
+      ],
+      "before": [
+        "i"
+      ],
+      "commands": [
+        // https://github.com/kvoon3/vscode-autohide-kb
+        "autoHide.runHide"
+      ],
+      "silent": true
+    }
+  ],
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "path/to/.vimrc",
+  "vim.visualstar": true
+}
