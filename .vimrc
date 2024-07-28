@@ -14,6 +14,10 @@ vnoremap < editor.action.outdentLines
 " Search
 " -------------------------
 
+" https://marketplace.visualstudio.com/items?itemName=cuixiaorui.cvim
+" repeat last flash search
+noremap <Enter> f<Enter>
+
 nnoremap <leader>ff workbench.action.quickTextSearch
 nnoremap <leader>fs workbench.action.gotoSymbol
 
@@ -21,12 +25,13 @@ nnoremap <leader>fs workbench.action.gotoSymbol
 " Navigation
 " -------------------------
 
-noremap H ^
-noremap L $
+
+" noremap H ^
+" noremap L $
 
 " keep curosr center when scroll
-" noremap H Hzz
-" noremap L Lzz
+noremap H Hzz
+noremap L Lzz
 noremap <C-u> <C-u>zz
 noremap <C-d> <C-d>zz
 
