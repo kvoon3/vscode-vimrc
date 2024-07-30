@@ -3,7 +3,7 @@
     "cuixiaorui.cvim": 1
   },
   "vim.flash.enable": true,
-  "vim.foldfix": true, 
+  "vim.foldfix": true,
   "vim.handleKeys": {
     "<C-a>": true,
     "<C-s>": false,
@@ -11,6 +11,12 @@
   },
   "vim.leader": "<Space>",
   "vim.normalModeKeyBindingsNonRecursive": [
+
+    /**
+     *------------
+     * Navigation
+     *------------
+     */
     {
       "before": [
         "leader",
@@ -26,7 +32,7 @@
         "E"
       ],
       "commands": [
-        "go-to-next-error.previous.error"
+        "go-to-next-error.prev.error"
       ]
     },
     {
@@ -44,9 +50,72 @@
         "W"
       ],
       "commands": [
-        "go-to-next-error.previous.warning"
+        "go-to-next-error.prev.warning"
       ]
     },
+    {
+      "before": [
+        "g",
+        "p",
+        "d"
+      ],
+      "commands": [
+        "editor.action.peekDefinition"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "i"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ],
+      "keys": "gi"
+    },
+    {
+      "before": [
+        "g",
+        "p",
+        "i"
+      ],
+      "commands": [
+        "editor.action.peekImplementation"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.referenceSearch.trigger"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "t"
+      ],
+      "commands": [
+        "editor.action.gototypedefinition"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "p",
+        "t"
+      ],
+      "commands": [
+        "editor.action.peekTypeDefinition"
+      ]
+    },
+    /**
+     *------------
+     * Other
+     *------------
+     */
     {
       "after": [
         "i"

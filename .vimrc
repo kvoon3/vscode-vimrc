@@ -20,6 +20,7 @@ noremap <Enter> f<Enter>
 
 nnoremap <leader>ff workbench.action.quickTextSearch
 nnoremap <leader>fs workbench.action.gotoSymbol
+nnoremap <leader>fp workbench.action.quickSwitchWindow
 
 " -------------------------
 " Navigation
@@ -35,24 +36,9 @@ noremap L Lzz
 noremap <C-u> <C-u>zz
 noremap <C-d> <C-d>zz
 
-nnoremap gpd editor.action.peekDefinition
-nnoremap gi editor.action.goToImplementation
-nnoremap gpi editor.action.peekImplementation
-nnoremap gr editor.action.referenceSearh.trigger
-nnoremap gt editor.action.gototypedefinition
-nnoremap gpt editor.action.peekTypeDefinition
-
 " https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree
 nnoremap <leader>t todo-tree.goToNext
 nnoremap <leader>T todo-tree.goToPrevious
-
-" https://marketplace.visualstudio.com/items?itemName=yy0931.go-to-next-error
-" WARNING: Has some unknown issue, remap it in settings.json
-" See: https://github.com/kvoon3/vscode-vimrc/blob/main/settings.json
-" nnoremap <leader>e go-to-next-error.next.error " error
-" nnoremap <leader>E go-to-next-error.prev.error " error
-" nnoremap <leader>w go-to-next-error.next.warning " warning / error
-" nnoremap <leader>W go-to-next-error.prev.warning " warning / error
 
 " -------------------------
 " Panel
